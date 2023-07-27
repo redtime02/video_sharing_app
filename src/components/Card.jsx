@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 const Container = styled.div`
@@ -49,6 +50,7 @@ const Info = styled.div`
 
 const Card = () => {
   return (
+    <Link to="/video/test"  style={{ textDecoration:"none" }}>
     <Container>
       <Image src='https://img.youtube.com/vi/HbBEKpKObKQ/sddefault.jpg' />
       <Details>
@@ -60,6 +62,7 @@ const Card = () => {
         </Texts>
       </Details>
     </Container>
+    </Link>
   )
 }
 

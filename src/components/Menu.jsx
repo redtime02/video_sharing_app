@@ -114,7 +114,9 @@ const Menu = ({darkMode, setDarkMode}) => {
         <Hr />
         <Login>
             Sign in now
-            <Button><AccountCircleOutlinedIcon />SIGN IN</Button>
+            <Link to="signin" style={{ textDecoration: "none" }}>
+                <Button><AccountCircleOutlinedIcon />SIGN IN</Button>
+            </Link>
         </Login>
         <Hr />
         <Item>

@@ -37,6 +37,7 @@ function App() {
             <Routes>
               <Route path='/'>
                 <Route index element={<Home />} />
+                <Route path='signin' element={<Home />} />
                 <Route path='video'>
                   <Route path=':id' element={<Video />}></Route>
                 </Route>
